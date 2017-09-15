@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="values ≔ CELLS × {1}" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="c0"/>
+<org.eventb.core.variable name=")" org.eventb.core.identifier="values"/>
+<org.eventb.core.invariant name="*" org.eventb.core.label="inv1" org.eventb.core.predicate="values ∈ CELLS ↠ VALUES"/>
+<org.eventb.core.invariant name="," org.eventb.core.label="inv2" org.eventb.core.predicate="∃row1,row2·∀cell1,cell2·row1∈ROWS∧row2∈ROWS∧cell1∈row1∧cell2∈row2 ⇒ values(cell1)≠values(cell2)"/>
+<org.eventb.core.invariant name="-" org.eventb.core.label="inv3" org.eventb.core.predicate="∃column1,column2·∀cell1,cell2·column1∈COLUMNS∧column2∈COLUMNS∧cell1∈column1∧cell2∈column2 ⇒ values(cell1)≠values(cell2)"/>
+<org.eventb.core.invariant name="." org.eventb.core.label="inv4" org.eventb.core.predicate="∃block1,block2·∀cell1,cell2·block1∈BLOCKS∧block2∈BLOCKS∧cell1∈block1∧cell2∈block2 ⇒ values(cell1)≠values(cell2)"/>
+<org.eventb.core.event name="/" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="evt1">
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="∃row1,row2·∀cell1,cell2·row1∈ROWS∧row2∈ROWS∧cell1∈row1∧cell2∈row2 ⇒ values(cell1)=values(cell2)"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="values(cell2) :∈ VALUES" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

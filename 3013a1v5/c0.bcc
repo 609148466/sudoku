@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="∀row⦂ℙ(CELLS)·row∈ROWS⇒row∈ℙ(CELLS)" org.eventb.core.source="/3013a1v5/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.axiom#)" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="(" org.eventb.core.label="axm2" org.eventb.core.predicate="∀column⦂ℙ(CELLS)·column∈COLUMNS⇒column∈ℙ(CELLS)" org.eventb.core.source="/3013a1v5/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.axiom#+" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name=")" org.eventb.core.label="axm3" org.eventb.core.predicate="∀block⦂ℙ(CELLS)·block∈BLOCKS⇒block∈ℙ(CELLS)" org.eventb.core.source="/3013a1v5/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.axiom#-" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="*" org.eventb.core.label="axm4" org.eventb.core.predicate="card(CELLS)=81" org.eventb.core.source="/3013a1v5/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.axiom#." org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="+" org.eventb.core.label="axm5" org.eventb.core.predicate="card(ROWS)=9" org.eventb.core.source="/3013a1v5/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.axiom#\/" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="," org.eventb.core.label="axm6" org.eventb.core.predicate="card(COLUMNS)=9" org.eventb.core.source="/3013a1v5/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.axiom#0" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="-" org.eventb.core.label="axm7" org.eventb.core.predicate="card(BLOCKS)=9" org.eventb.core.source="/3013a1v5/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.axiom#1" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="." org.eventb.core.label="axm8" org.eventb.core.predicate="finite(ROWS)" org.eventb.core.source="/3013a1v5/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.axiom#2" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="/" org.eventb.core.label="axm9" org.eventb.core.predicate="finite(COLUMNS)" org.eventb.core.source="/3013a1v5/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.axiom#3" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="0" org.eventb.core.label="axm10" org.eventb.core.predicate="finite(BLOCKS)" org.eventb.core.source="/3013a1v5/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.axiom#4" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="1" org.eventb.core.label="axm11" org.eventb.core.predicate="finite(CELLS)" org.eventb.core.source="/3013a1v5/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.axiom#5" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="2" org.eventb.core.label="axm12" org.eventb.core.predicate="VALUES=1 ‥ 9" org.eventb.core.source="/3013a1v5/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.axiom#7" org.eventb.core.theorem="false"/>
+<org.eventb.core.scConstant name="BLOCKS" org.eventb.core.source="/3013a1v5/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.constant#," org.eventb.core.type="ℙ(ℙ(CELLS))"/>
+<org.eventb.core.scCarrierSet name="CELLS" org.eventb.core.source="/3013a1v5/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.carrierSet#'" org.eventb.core.type="ℙ(CELLS)"/>
+<org.eventb.core.scConstant name="COLUMNS" org.eventb.core.source="/3013a1v5/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.constant#*" org.eventb.core.type="ℙ(ℙ(CELLS))"/>
+<org.eventb.core.scConstant name="ROWS" org.eventb.core.source="/3013a1v5/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.constant#(" org.eventb.core.type="ℙ(ℙ(CELLS))"/>
+<org.eventb.core.scConstant name="VALUES" org.eventb.core.source="/3013a1v5/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.constant#6" org.eventb.core.type="ℙ(ℤ)"/>
+</org.eventb.core.scContextFile>

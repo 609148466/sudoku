@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+<org.eventb.core.prProof name="axm2/WD"/>
+<org.eventb.core.prProof name="axm3/WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="p0" org.eventb.core.prSets="ROWS">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="he with card(ROWS)=MAXDIGIT" org.eventb.core.prHyps="p0">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p2"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p1"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="MAXDIGIT" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="card(COLUMNS)=card(ROWS)">
+<org.eventb.core.prIdent name="COLUMNS" org.eventb.core.type="ℙ(COLUMNS)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="card(ROWS)=MAXDIGIT"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="card(COLUMNS)=MAXDIGIT">
+<org.eventb.core.prIdent name="COLUMNS" org.eventb.core.type="ℙ(COLUMNS)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.he:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="axm4/WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p1"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p5"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀row⦂ℙ(CELLS)·row∈ROWS⇒row∈ℙ(CELLS)">
+<org.eventb.core.prIdent name="CELLS" org.eventb.core.type="ℙ(CELLS)"/>
+<org.eventb.core.prIdent name="ROWS" org.eventb.core.type="ℙ(ℙ(CELLS))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀column⦂ℙ(CELLS)·column∈COLUMNS⇒⊤">
+<org.eventb.core.prIdent name="CELLS" org.eventb.core.type="ℙ(CELLS)"/>
+<org.eventb.core.prIdent name="COLUMNS" org.eventb.core.type="ℙ(ℙ(CELLS))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀block⦂ℙ(CELLS)·block∈BLOCKS⇒block∈ℙ(CELLS)">
+<org.eventb.core.prIdent name="BLOCKS" org.eventb.core.type="ℙ(ℙ(CELLS))"/>
+<org.eventb.core.prIdent name="CELLS" org.eventb.core.type="ℙ(CELLS)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀block⦂ℙ(CELLS)·block∈BLOCKS⇒⊤">
+<org.eventb.core.prIdent name="BLOCKS" org.eventb.core.type="ℙ(ℙ(CELLS))"/>
+<org.eventb.core.prIdent name="CELLS" org.eventb.core.type="ℙ(CELLS)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀row⦂ℙ(CELLS)·row∈ROWS⇒⊤">
+<org.eventb.core.prIdent name="CELLS" org.eventb.core.type="ℙ(CELLS)"/>
+<org.eventb.core.prIdent name="ROWS" org.eventb.core.type="ℙ(ℙ(CELLS))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀column⦂ℙ(CELLS)·column∈COLUMNS⇒column∈ℙ(CELLS)">
+<org.eventb.core.prIdent name="CELLS" org.eventb.core.type="ℙ(CELLS)"/>
+<org.eventb.core.prIdent name="COLUMNS" org.eventb.core.type="ℙ(ℙ(CELLS))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="axm5/WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p1"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p5"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀row⦂ℙ(CELLS)·row∈ROWS⇒row∈ℙ(CELLS)">
+<org.eventb.core.prIdent name="CELLS" org.eventb.core.type="ℙ(CELLS)"/>
+<org.eventb.core.prIdent name="ROWS" org.eventb.core.type="ℙ(ℙ(CELLS))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀column⦂ℙ(CELLS)·column∈COLUMNS⇒⊤">
+<org.eventb.core.prIdent name="CELLS" org.eventb.core.type="ℙ(CELLS)"/>
+<org.eventb.core.prIdent name="COLUMNS" org.eventb.core.type="ℙ(ℙ(CELLS))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀block⦂ℙ(CELLS)·block∈BLOCKS⇒block∈ℙ(CELLS)">
+<org.eventb.core.prIdent name="BLOCKS" org.eventb.core.type="ℙ(ℙ(CELLS))"/>
+<org.eventb.core.prIdent name="CELLS" org.eventb.core.type="ℙ(CELLS)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀block⦂ℙ(CELLS)·block∈BLOCKS⇒⊤">
+<org.eventb.core.prIdent name="BLOCKS" org.eventb.core.type="ℙ(ℙ(CELLS))"/>
+<org.eventb.core.prIdent name="CELLS" org.eventb.core.type="ℙ(CELLS)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀row⦂ℙ(CELLS)·row∈ROWS⇒⊤">
+<org.eventb.core.prIdent name="CELLS" org.eventb.core.type="ℙ(CELLS)"/>
+<org.eventb.core.prIdent name="ROWS" org.eventb.core.type="ℙ(ℙ(CELLS))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀column⦂ℙ(CELLS)·column∈COLUMNS⇒column∈ℙ(CELLS)">
+<org.eventb.core.prIdent name="CELLS" org.eventb.core.type="ℙ(CELLS)"/>
+<org.eventb.core.prIdent name="COLUMNS" org.eventb.core.type="ℙ(ℙ(CELLS))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="axm6/WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p1"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p5"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀row⦂ℙ(CELLS)·row∈ROWS⇒row∈ℙ(CELLS)">
+<org.eventb.core.prIdent name="CELLS" org.eventb.core.type="ℙ(CELLS)"/>
+<org.eventb.core.prIdent name="ROWS" org.eventb.core.type="ℙ(ℙ(CELLS))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀column⦂ℙ(CELLS)·column∈COLUMNS⇒⊤">
+<org.eventb.core.prIdent name="CELLS" org.eventb.core.type="ℙ(CELLS)"/>
+<org.eventb.core.prIdent name="COLUMNS" org.eventb.core.type="ℙ(ℙ(CELLS))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀block⦂ℙ(CELLS)·block∈BLOCKS⇒block∈ℙ(CELLS)">
+<org.eventb.core.prIdent name="BLOCKS" org.eventb.core.type="ℙ(ℙ(CELLS))"/>
+<org.eventb.core.prIdent name="CELLS" org.eventb.core.type="ℙ(CELLS)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀block⦂ℙ(CELLS)·block∈BLOCKS⇒⊤">
+<org.eventb.core.prIdent name="BLOCKS" org.eventb.core.type="ℙ(ℙ(CELLS))"/>
+<org.eventb.core.prIdent name="CELLS" org.eventb.core.type="ℙ(CELLS)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀row⦂ℙ(CELLS)·row∈ROWS⇒⊤">
+<org.eventb.core.prIdent name="CELLS" org.eventb.core.type="ℙ(CELLS)"/>
+<org.eventb.core.prIdent name="ROWS" org.eventb.core.type="ℙ(ℙ(CELLS))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀column⦂ℙ(CELLS)·column∈COLUMNS⇒column∈ℙ(CELLS)">
+<org.eventb.core.prIdent name="CELLS" org.eventb.core.type="ℙ(CELLS)"/>
+<org.eventb.core.prIdent name="COLUMNS" org.eventb.core.type="ℙ(ℙ(CELLS))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="axm1/WD"/>
+<org.eventb.core.prProof name="axm5/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="ROWS">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="he with card(ROWS)=MAXDIGIT" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p3"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p4" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p2,p4"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="DIGITS" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="MAXDIGIT" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="card(BLOCKS)=MAXDIGIT">
+<org.eventb.core.prIdent name="BLOCKS" org.eventb.core.type="ℙ(BLOCKS)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="card(BLOCKS)=card(ROWS)">
+<org.eventb.core.prIdent name="BLOCKS" org.eventb.core.type="ℙ(BLOCKS)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="DIGITS=1 ‥ card(ROWS)"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="card(COLUMNS)=card(ROWS)">
+<org.eventb.core.prIdent name="COLUMNS" org.eventb.core.type="ℙ(COLUMNS)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="DIGITS=1 ‥ MAXDIGIT"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="card(ROWS)=MAXDIGIT"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="card(COLUMNS)=MAXDIGIT">
+<org.eventb.core.prIdent name="COLUMNS" org.eventb.core.type="ℙ(COLUMNS)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.he:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="axm3/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="BLOCKS,ROWS">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="he with card(ROWS)=MAXDIGIT" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p4">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p3"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p2"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="MAXDIGIT" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="card(BLOCKS)=MAXDIGIT"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="card(BLOCKS)=card(ROWS)"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="card(COLUMNS)=card(ROWS)">
+<org.eventb.core.prIdent name="COLUMNS" org.eventb.core.type="ℙ(COLUMNS)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="card(ROWS)=MAXDIGIT"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="card(COLUMNS)=MAXDIGIT">
+<org.eventb.core.prIdent name="COLUMNS" org.eventb.core.type="ℙ(COLUMNS)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.he:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="axm7/WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p1"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p5"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀row⦂ℙ(CELLS)·row∈ROWS⇒row∈ℙ(CELLS)">
+<org.eventb.core.prIdent name="CELLS" org.eventb.core.type="ℙ(CELLS)"/>
+<org.eventb.core.prIdent name="ROWS" org.eventb.core.type="ℙ(ℙ(CELLS))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀column⦂ℙ(CELLS)·column∈COLUMNS⇒⊤">
+<org.eventb.core.prIdent name="CELLS" org.eventb.core.type="ℙ(CELLS)"/>
+<org.eventb.core.prIdent name="COLUMNS" org.eventb.core.type="ℙ(ℙ(CELLS))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀block⦂ℙ(CELLS)·block∈BLOCKS⇒block∈ℙ(CELLS)">
+<org.eventb.core.prIdent name="BLOCKS" org.eventb.core.type="ℙ(ℙ(CELLS))"/>
+<org.eventb.core.prIdent name="CELLS" org.eventb.core.type="ℙ(CELLS)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀block⦂ℙ(CELLS)·block∈BLOCKS⇒⊤">
+<org.eventb.core.prIdent name="BLOCKS" org.eventb.core.type="ℙ(ℙ(CELLS))"/>
+<org.eventb.core.prIdent name="CELLS" org.eventb.core.type="ℙ(CELLS)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀row⦂ℙ(CELLS)·row∈ROWS⇒⊤">
+<org.eventb.core.prIdent name="CELLS" org.eventb.core.type="ℙ(CELLS)"/>
+<org.eventb.core.prIdent name="ROWS" org.eventb.core.type="ℙ(ℙ(CELLS))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀column⦂ℙ(CELLS)·column∈COLUMNS⇒column∈ℙ(CELLS)">
+<org.eventb.core.prIdent name="CELLS" org.eventb.core.type="ℙ(CELLS)"/>
+<org.eventb.core.prIdent name="COLUMNS" org.eventb.core.type="ℙ(ℙ(CELLS))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+</org.eventb.core.prProof>
+</org.eventb.core.prFile>
