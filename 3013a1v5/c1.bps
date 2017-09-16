@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.psFile>
+<org.eventb.core.psStatus name="axm4/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="16" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="axm6/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="16" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="axm8/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="16" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="axm63/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="16" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="axm84/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="16" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="axm163/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="16" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="axm184/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="16" org.eventb.core.psManual="false"/>
+</org.eventb.core.psFile>

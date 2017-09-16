@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="16">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="16">
+<org.eventb.core.poIdentifier name="CELL" org.eventb.core.type="ℙ(CELL)"/>
+<org.eventb.core.poIdentifier name="BLOCKS" org.eventb.core.type="ℙ(ℙ(CELL))"/>
+<org.eventb.core.poIdentifier name="CELLS" org.eventb.core.type="ℙ(CELL)"/>
+<org.eventb.core.poIdentifier name="COLUMNS" org.eventb.core.type="ℙ(ℙ(CELL))"/>
+<org.eventb.core.poIdentifier name="ROWS" org.eventb.core.type="ℙ(ℙ(CELL))"/>
+<org.eventb.core.poIdentifier name="getBlock" org.eventb.core.type="ℙ(CELL×ℙ(CELL))"/>
+<org.eventb.core.poIdentifier name="getColumn" org.eventb.core.type="ℙ(CELL×ℙ(CELL))"/>
+<org.eventb.core.poIdentifier name="getRow" org.eventb.core.type="ℙ(CELL×ℙ(CELL))"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="axm4/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="16">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/3013a1v5/c1.bpo|org.eventb.core.poFile#c1|org.eventb.core.poPredicateSet#HYP'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(CELLS)" org.eventb.core.source="/3013a1v5/c1.buc|org.eventb.core.contextFile#c1|org.eventb.core.axiom#."/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/3013a1v5/c1.buc|org.eventb.core.contextFile#c1|org.eventb.core.axiom#."/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/3013a1v5/c1.bpo|org.eventb.core.poFile#c1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/3013a1v5/c1.bpo|org.eventb.core.poFile#c1|org.eventb.core.poPredicateSet#HYP'"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm6/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="16">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/3013a1v5/c1.bpo|org.eventb.core.poFile#c1|org.eventb.core.poPredicateSet#HYP)"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(ROWS)" org.eventb.core.source="/3013a1v5/c1.buc|org.eventb.core.contextFile#c1|org.eventb.core.axiom#0"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/3013a1v5/c1.buc|org.eventb.core.contextFile#c1|org.eventb.core.axiom#0"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/3013a1v5/c1.bpo|org.eventb.core.poFile#c1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/3013a1v5/c1.bpo|org.eventb.core.poFile#c1|org.eventb.core.poPredicateSet#HYP)"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm8/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="16">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/3013a1v5/c1.bpo|org.eventb.core.poFile#c1|org.eventb.core.poPredicateSet#HYP*"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀row⦂ℙ(CELL)·row∈ROWS⇒finite(row)" org.eventb.core.source="/3013a1v5/c1.buc|org.eventb.core.contextFile#c1|org.eventb.core.axiom#2"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/3013a1v5/c1.buc|org.eventb.core.contextFile#c1|org.eventb.core.axiom#2"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/3013a1v5/c1.bpo|org.eventb.core.poFile#c1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/3013a1v5/c1.bpo|org.eventb.core.poFile#c1|org.eventb.core.poPredicateSet#HYP*"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm63/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="16">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/3013a1v5/c1.bpo|org.eventb.core.poFile#c1|org.eventb.core.poPredicateSet#HYP."/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(COLUMNS)" org.eventb.core.source="/3013a1v5/c1.buc|org.eventb.core.contextFile#c1|org.eventb.core.axiom#999"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/3013a1v5/c1.buc|org.eventb.core.contextFile#c1|org.eventb.core.axiom#999"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/3013a1v5/c1.bpo|org.eventb.core.poFile#c1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/3013a1v5/c1.bpo|org.eventb.core.poFile#c1|org.eventb.core.poPredicateSet#HYP."/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm84/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="16">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/3013a1v5/c1.bpo|org.eventb.core.poFile#c1|org.eventb.core.poPredicateSet#HYP\/"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀column⦂ℙ(CELL)·column∈COLUMNS⇒finite(column)" org.eventb.core.source="/3013a1v5/c1.buc|org.eventb.core.contextFile#c1|org.eventb.core.axiom#9999"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/3013a1v5/c1.buc|org.eventb.core.contextFile#c1|org.eventb.core.axiom#9999"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/3013a1v5/c1.bpo|org.eventb.core.poFile#c1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/3013a1v5/c1.bpo|org.eventb.core.poFile#c1|org.eventb.core.poPredicateSet#HYP\/"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm163/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="16">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/3013a1v5/c1.bpo|org.eventb.core.poFile#c1|org.eventb.core.poPredicateSet#HYP3"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(BLOCKS)" org.eventb.core.source="/3013a1v5/c1.buc|org.eventb.core.contextFile#c1|org.eventb.core.axiom#1999"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/3013a1v5/c1.buc|org.eventb.core.contextFile#c1|org.eventb.core.axiom#1999"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/3013a1v5/c1.bpo|org.eventb.core.poFile#c1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/3013a1v5/c1.bpo|org.eventb.core.poFile#c1|org.eventb.core.poPredicateSet#HYP3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm184/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="16">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/3013a1v5/c1.bpo|org.eventb.core.poFile#c1|org.eventb.core.poPredicateSet#HYP4"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀block⦂ℙ(CELL)·block∈BLOCKS⇒finite(block)" org.eventb.core.source="/3013a1v5/c1.buc|org.eventb.core.contextFile#c1|org.eventb.core.axiom#19999"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/3013a1v5/c1.buc|org.eventb.core.contextFile#c1|org.eventb.core.axiom#19999"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/3013a1v5/c1.bpo|org.eventb.core.poFile#c1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/3013a1v5/c1.bpo|org.eventb.core.poFile#c1|org.eventb.core.poPredicateSet#HYP4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="HYP'" org.eventb.core.parentSet="/3013a1v5/c1.bpo|org.eventb.core.poFile#c1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="16">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="CELLS∈ℙ(CELL)" org.eventb.core.source="/3013a1v5/c1.buc|org.eventb.core.contextFile#c1|org.eventb.core.axiom#)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYP)" org.eventb.core.parentSet="/3013a1v5/c1.bpo|org.eventb.core.poFile#c1|org.eventb.core.poPredicateSet#HYP'" org.eventb.core.poStamp="16">
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="card(CELLS)=81" org.eventb.core.source="/3013a1v5/c1.buc|org.eventb.core.contextFile#c1|org.eventb.core.axiom#."/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="ROWS∈ℙ(ℙ(CELL))" org.eventb.core.source="/3013a1v5/c1.buc|org.eventb.core.contextFile#c1|org.eventb.core.axiom#-"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYP*" org.eventb.core.parentSet="/3013a1v5/c1.bpo|org.eventb.core.poFile#c1|org.eventb.core.poPredicateSet#HYP)" org.eventb.core.poStamp="16">
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="card(ROWS)=9" org.eventb.core.source="/3013a1v5/c1.buc|org.eventb.core.contextFile#c1|org.eventb.core.axiom#0"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYP." org.eventb.core.parentSet="/3013a1v5/c1.bpo|org.eventb.core.poFile#c1|org.eventb.core.poPredicateSet#HYP*" org.eventb.core.poStamp="16">
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="∀row⦂ℙ(CELL)·row∈ROWS⇒card(row)=9" org.eventb.core.source="/3013a1v5/c1.buc|org.eventb.core.contextFile#c1|org.eventb.core.axiom#2"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="∀cell1⦂CELL,cell2⦂CELL,row1⦂ℙ(CELL),row2⦂ℙ(CELL)·cell1∈row1∧cell2∈row2∧row1∈ROWS∧row2∈ROWS⇒cell1≠cell2" org.eventb.core.source="/3013a1v5/c1.buc|org.eventb.core.contextFile#c1|org.eventb.core.axiom#1"/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="getRow∈CELL ↠ ROWS" org.eventb.core.source="/3013a1v5/c1.buc|org.eventb.core.contextFile#c1|org.eventb.core.axiom#7"/>
+<org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="COLUMNS∈ℙ(ℙ(CELL))" org.eventb.core.source="/3013a1v5/c1.buc|org.eventb.core.contextFile#c1|org.eventb.core.axiom#99"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYP/" org.eventb.core.parentSet="/3013a1v5/c1.bpo|org.eventb.core.poFile#c1|org.eventb.core.poPredicateSet#HYP." org.eventb.core.poStamp="16">
+<org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="card(COLUMNS)=9" org.eventb.core.source="/3013a1v5/c1.buc|org.eventb.core.contextFile#c1|org.eventb.core.axiom#999"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYP3" org.eventb.core.parentSet="/3013a1v5/c1.bpo|org.eventb.core.poFile#c1|org.eventb.core.poPredicateSet#HYP\/" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD9" org.eventb.core.predicate="∀column⦂ℙ(CELL)·column∈COLUMNS⇒card(column)=9" org.eventb.core.source="/3013a1v5/c1.buc|org.eventb.core.contextFile#c1|org.eventb.core.axiom#9999"/>
+<org.eventb.core.poPredicate name="PRD10" org.eventb.core.predicate="∀cell1⦂CELL,cell2⦂CELL,column1⦂ℙ(CELL),column2⦂ℙ(CELL)·cell1∈column1∧cell2∈column2∧column1∈COLUMNS∧column2∈COLUMNS⇒cell1≠cell2" org.eventb.core.source="/3013a1v5/c1.buc|org.eventb.core.contextFile#c1|org.eventb.core.axiom#99999"/>
+<org.eventb.core.poPredicate name="PRD11" org.eventb.core.predicate="getColumn∈CELL ↠ COLUMNS" org.eventb.core.source="/3013a1v5/c1.buc|org.eventb.core.contextFile#c1|org.eventb.core.axiom#222"/>
+<org.eventb.core.poPredicate name="PRD12" org.eventb.core.predicate="BLOCKS∈ℙ(ℙ(CELL))" org.eventb.core.source="/3013a1v5/c1.buc|org.eventb.core.contextFile#c1|org.eventb.core.axiom#199"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYP4" org.eventb.core.parentSet="/3013a1v5/c1.bpo|org.eventb.core.poFile#c1|org.eventb.core.poPredicateSet#HYP3" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD13" org.eventb.core.predicate="card(BLOCKS)=9" org.eventb.core.source="/3013a1v5/c1.buc|org.eventb.core.contextFile#c1|org.eventb.core.axiom#1999"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/3013a1v5/c1.bpo|org.eventb.core.poFile#c1|org.eventb.core.poPredicateSet#HYP4" org.eventb.core.poStamp="16">
+<org.eventb.core.poPredicate name="PRD14" org.eventb.core.predicate="∀block⦂ℙ(CELL)·block∈BLOCKS⇒card(block)=9" org.eventb.core.source="/3013a1v5/c1.buc|org.eventb.core.contextFile#c1|org.eventb.core.axiom#19999"/>
+<org.eventb.core.poPredicate name="PRD15" org.eventb.core.predicate="∀cell1⦂CELL,cell2⦂CELL,block1⦂ℙ(CELL),block2⦂ℙ(CELL)·cell1∈block1∧cell2∈block2∧block1∈BLOCKS∧block2∈BLOCKS⇒cell1≠cell2" org.eventb.core.source="/3013a1v5/c1.buc|org.eventb.core.contextFile#c1|org.eventb.core.axiom#199999"/>
+<org.eventb.core.poPredicate name="PRD16" org.eventb.core.predicate="getBlock∈CELL ↠ BLOCKS" org.eventb.core.source="/3013a1v5/c1.buc|org.eventb.core.contextFile#c1|org.eventb.core.axiom#1222"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

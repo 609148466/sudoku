@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+<org.eventb.core.carrierSet name="'" org.eventb.core.identifier="CELL"/>
+<org.eventb.core.constant name="(" org.eventb.core.identifier="CELLS"/>
+<org.eventb.core.axiom name=")" org.eventb.core.label="axm1" org.eventb.core.predicate="CELLS ∈ ℙ(CELL)"/>
+<org.eventb.core.constant name="," org.eventb.core.identifier="ROWS"/>
+<org.eventb.core.axiom name="." org.eventb.core.label="axm4" org.eventb.core.predicate="card(CELLS) = 81"/>
+<org.eventb.core.axiom name="-" org.eventb.core.label="axm3" org.eventb.core.predicate="ROWS ∈ ℙ(ℙ(CELL))"/>
+<org.eventb.core.axiom name="0" org.eventb.core.label="axm6" org.eventb.core.predicate="card(ROWS) = 9"/>
+<org.eventb.core.axiom name="2" org.eventb.core.label="axm8" org.eventb.core.predicate="∀row· row∈ROWS ⇒ card(row)=9"/>
+<org.eventb.core.axiom name="1" org.eventb.core.comment="no duplicated cells in any two rows" org.eventb.core.label="axm7" org.eventb.core.predicate="∀cell1,cell2,row1,row2· cell1∈row1 ∧ cell2∈row2 ∧ row1∈ROWS ∧ row2∈ROWS ⇒ cell1≠cell2"/>
+<org.eventb.core.axiom name="7" org.eventb.core.label="axm11" org.eventb.core.predicate="getRow ∈ CELL ↠ ROWS"/>
+<org.eventb.core.axiom name="99" org.eventb.core.label="axm32" org.eventb.core.predicate="COLUMNS ∈ ℙ(ℙ(CELL))"/>
+<org.eventb.core.axiom name="999" org.eventb.core.label="axm63" org.eventb.core.predicate="card(COLUMNS) = 9"/>
+<org.eventb.core.axiom name="9999" org.eventb.core.label="axm84" org.eventb.core.predicate="∀column· column∈COLUMNS ⇒ card(column)=9"/>
+<org.eventb.core.axiom name="99999" org.eventb.core.comment="no duplicated cells in any two columns" org.eventb.core.label="axm57" org.eventb.core.predicate="∀cell1,cell2,column1,column2· cell1∈column1 ∧ cell2∈column2 ∧ column1∈COLUMNS ∧ column2∈COLUMNS ⇒ cell1≠cell2"/>
+<org.eventb.core.constant name="911" org.eventb.core.identifier="COLUMNS"/>
+<org.eventb.core.axiom name="222" org.eventb.core.label="axm131" org.eventb.core.predicate="getColumn ∈ CELL ↠ COLUMNS"/>
+<org.eventb.core.constant name="6" org.eventb.core.identifier="getRow"/>
+<org.eventb.core.constant name="9999:" org.eventb.core.identifier="getColumn"/>
+<org.eventb.core.constant name="9999;" org.eventb.core.identifier="getBlock"/>
+<org.eventb.core.axiom name="199" org.eventb.core.label="axm132" org.eventb.core.predicate="BLOCKS ∈ ℙ(ℙ(CELL))"/>
+<org.eventb.core.axiom name="1999" org.eventb.core.label="axm163" org.eventb.core.predicate="card(BLOCKS) = 9"/>
+<org.eventb.core.axiom name="19999" org.eventb.core.label="axm184" org.eventb.core.predicate="∀block· block∈BLOCKS ⇒ card(block)=9"/>
+<org.eventb.core.axiom name="199999" org.eventb.core.comment="no duplicated cells in any two blocks" org.eventb.core.label="axm157" org.eventb.core.predicate="∀cell1,cell2,block1,block2· cell1∈block1 ∧ cell2∈block2 ∧ block1∈BLOCKS ∧ block2∈BLOCKS ⇒ cell1≠cell2"/>
+<org.eventb.core.constant name="1911" org.eventb.core.identifier="BLOCKS"/>
+<org.eventb.core.axiom name="1222" org.eventb.core.label="axm31" org.eventb.core.predicate="getBlock ∈ CELL ↠ BLOCKS"/>
+</org.eventb.core.contextFile>

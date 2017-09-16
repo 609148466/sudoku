@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poIdentifier name="answer" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="block" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="cells" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.poIdentifier name="column" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="digits" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.poIdentifier name="fill" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="row" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poPredicate name="digitt" org.eventb.core.predicate="cells=1 ‥ 81" org.eventb.core.source="/3013a1v5/c2.buc|org.eventb.core.contextFile#c2|org.eventb.core.axiom#("/>
+<org.eventb.core.poPredicate name="digitu" org.eventb.core.predicate="digits=1 ‥ 9" org.eventb.core.source="/3013a1v5/c2.buc|org.eventb.core.contextFile#c2|org.eventb.core.axiom#*"/>
+<org.eventb.core.poPredicate name="digitv" org.eventb.core.predicate="column∈cells ↠ digits" org.eventb.core.source="/3013a1v5/c2.buc|org.eventb.core.contextFile#c2|org.eventb.core.axiom#3"/>
+<org.eventb.core.poPredicate name="digitw" org.eventb.core.predicate="∀cell⦂ℤ·cell∈cells⇒column(cell)=(cell − 1) mod 9+1" org.eventb.core.source="/3013a1v5/c2.buc|org.eventb.core.contextFile#c2|org.eventb.core.axiom#5"/>
+<org.eventb.core.poPredicate name="digitx" org.eventb.core.predicate="row∈cells ↠ digits" org.eventb.core.source="/3013a1v5/c2.buc|org.eventb.core.contextFile#c2|org.eventb.core.axiom#0"/>
+<org.eventb.core.poPredicate name="digity" org.eventb.core.predicate="∀cell⦂ℤ·cell∈cells⇒row(cell)=(cell − 1) ÷ 9+1" org.eventb.core.source="/3013a1v5/c2.buc|org.eventb.core.contextFile#c2|org.eventb.core.axiom#6"/>
+<org.eventb.core.poPredicate name="digitz" org.eventb.core.predicate="block∈cells ↠ digits" org.eventb.core.source="/3013a1v5/c2.buc|org.eventb.core.contextFile#c2|org.eventb.core.axiom#8"/>
+<org.eventb.core.poPredicate name="digit{" org.eventb.core.predicate="∀cell⦂ℤ·cell∈cells⇒block(cell)=(row(cell) − 1) ÷ 3∗3+(column(cell) − 1) ÷ 3+1" org.eventb.core.source="/3013a1v5/c2.buc|org.eventb.core.contextFile#c2|org.eventb.core.axiom#9"/>
+<org.eventb.core.poPredicate name="digit|" org.eventb.core.predicate="answer∈cells ↠ digits" org.eventb.core.source="/3013a1v5/c2.buc|org.eventb.core.contextFile#c2|org.eventb.core.axiom#;"/>
+<org.eventb.core.poPredicate name="digit}" org.eventb.core.predicate="∀cell1⦂ℤ,cell2⦂ℤ·row(cell1)=row(cell2)⇒answer(cell1)≠answer(cell2)" org.eventb.core.source="/3013a1v5/c2.buc|org.eventb.core.contextFile#c2|org.eventb.core.axiom#?"/>
+<org.eventb.core.poPredicate name="digit~" org.eventb.core.predicate="∀cell1⦂ℤ,cell2⦂ℤ·column(cell1)=column(cell2)⇒answer(cell1)≠answer(cell2)" org.eventb.core.source="/3013a1v5/c2.buc|org.eventb.core.contextFile#c2|org.eventb.core.axiom#@"/>
+<org.eventb.core.poPredicate name="digiu'" org.eventb.core.predicate="∀cell1⦂ℤ,cell2⦂ℤ·block(cell1)=block(cell2)⇒answer(cell1)≠answer(cell2)" org.eventb.core.source="/3013a1v5/c2.buc|org.eventb.core.contextFile#c2|org.eventb.core.axiom#A"/>
+<org.eventb.core.poPredicate name="digiu(" org.eventb.core.predicate="fill∈cells → digits∪{0}" org.eventb.core.source="/3013a1v5/c2.buc|org.eventb.core.contextFile#c2|org.eventb.core.axiom#&gt;"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/3013a1v5/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="1"/>
+<org.eventb.core.poPredicateSet name="EVTALLHYPc3" org.eventb.core.parentSet="/3013a1v5/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/3013a1v5/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1"/>
+</org.eventb.core.poFile>
